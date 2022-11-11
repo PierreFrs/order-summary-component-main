@@ -1,3 +1,5 @@
+/*global styles*/
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -23,15 +25,18 @@ body {
     background-size: cover;
 }
 
+/*card styles*/
+
 .card {
     margin: auto;
-    max-width: 90%;
+    max-width: 327px;
     background-color: white;
-    border-radius: 12px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
 }
 
 .visual {
@@ -43,3 +48,112 @@ body {
     width: 100%;
 }
 
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.summary-heading {
+    font-size: 22px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.summary-paragraph {
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.6;
+    color: hsl(224, 23%, 55%);
+}
+
+.plan {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 11px;
+}
+
+.music-icon {
+    margin-right: 1rem;
+}
+
+.plan-price {
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:.1rem;
+}
+
+.plan-type {
+    font-size: 14px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%)
+}
+
+.price {
+    font-size: 14px;
+    color: hsl(224, 23%, 55%);
+}
+
+.change-link {
+    font-size: 13px;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+.change-link:hover {
+    color: #766CF1;
+    text-decoration: none;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .1rem;
+}
+
+.button {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+    height: 50px;
+    line-height: 50px;
+}
+
+.proceed {
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 11px;
+    color: white;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+}
+
+.cancel {
+    color: hsl(224, 23%, 55%);
+}
+
+
+/*footer styles*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
