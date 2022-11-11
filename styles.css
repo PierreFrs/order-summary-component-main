@@ -20,10 +20,12 @@ body {
     position: relative;
     max-width: 375px;
     overflow: hidden;
+    background-color: #edf2ff;
     background-image: url(./images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:  calc(100%) calc(100% - 100px);
     background-size: cover;
+    
 }
 
 /*card styles*/
@@ -171,7 +173,7 @@ footer {
     
     .body {
         width: 100vw;
-;
+        background-image: url(./images/pattern-background-desktop.svg);
     }
 
     .card {
